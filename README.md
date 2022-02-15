@@ -4,7 +4,7 @@
 
 Requirements:
 
-certifi==2021.10.8
+certifi==2021.10.8__
 charset-normalizer==2.0.11
 click==8.0.3
 Flask==2.0.2
