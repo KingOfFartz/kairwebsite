@@ -18,4 +18,4 @@ In commandline/powershell type:
 create a .env file
 //TODO
 
-dbmanager.py will handle database requests
+dbmanager.py
