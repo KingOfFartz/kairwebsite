@@ -11,7 +11,7 @@ go to venv/bin/
 activate virtual enviroment by typing activate  
 type pip -r requirements.txt to download libraries  
 In commandline/powershell type:  
-> $env:FLASK_APP="__init__"  
+> $env:FLASK_APP="\_\_init\_\_"  
 > flask run  
  * Running on http://127.0.0.1:5000/  
 
