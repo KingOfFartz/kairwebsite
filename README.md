@@ -1,6 +1,15 @@
 # kairwebsite
 
 
+How to install.
+
+Create a python venv
+activate python venv
+use pip -r requirements.txt
+
+create .env file
+add 
+
 
 Requirements:
 
