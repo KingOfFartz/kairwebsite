@@ -13,7 +13,7 @@ type pip -r requirements.txt to download libraries
 In commandline/powershell type:  
 > $env:FLASK_APP="\_\_init\_\_"  
 > flask run  
- * Running on http://127.0.0.1:5000/  
+> Running on http://127.0.0.1:5000/  
 
 create a .env file
 //TODO
