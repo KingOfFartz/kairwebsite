@@ -1,0 +1,57 @@
+ 
+[Fri Feb 11 20:16:00.432841 2022] [wsgi:error] [pid 242143] [client 192.31.180.137:32888] mod_wsgi (pid=242143): Exception occurred processing WSGI script '/var/www/FlaskApp/FlaskApp.wsgi'.
+[Fri Feb 11 20:16:00.434107 2022] [wsgi:error] [pid 242143] [client 192.31.180.137:32888] Traceback (most recent call last):
+[Fri Feb 11 20:16:00.434227 2022] [wsgi:error] [pid 242143] [client 192.31.180.137:32888]   File "/usr/local/lib/python3.8/dist-packages/flask/app.py", line 2091, in __call__
+[Fri Feb 11 20:16:00.434240 2022] [wsgi:error] [pid 242143] [client 192.31.180.137:32888]     return self.wsgi_app(environ, start_response)
+[Fri Feb 11 20:16:00.434250 2022] [wsgi:error] [pid 242143] [client 192.31.180.137:32888]   File "/usr/local/lib/python3.8/dist-packages/flask/app.py", line 2076, in wsgi_app
+[Fri Feb 11 20:16:00.434255 2022] [wsgi:error] [pid 242143] [client 192.31.180.137:32888]     response = self.handle_exception(e)
+[Fri Feb 11 20:16:00.434264 2022] [wsgi:error] [pid 242143] [client 192.31.180.137:32888]   File "/usr/local/lib/python3.8/dist-packages/flask/app.py", line 2073, in wsgi_app
+[Fri Feb 11 20:16:00.434269 2022] [wsgi:error] [pid 242143] [client 192.31.180.137:32888]     response = self.full_dispatch_request()
+[Fri Feb 11 20:16:00.434286 2022] [wsgi:error] [pid 242143] [client 192.31.180.137:32888]   File "/usr/local/lib/python3.8/dist-packages/flask/app.py", line 1518, in full_dispatch_request
+[Fri Feb 11 20:16:00.434292 2022] [wsgi:error] [pid 242143] [client 192.31.180.137:32888]     rv = self.handle_user_exception(e)
+[Fri Feb 11 20:16:00.434300 2022] [wsgi:error] [pid 242143] [client 192.31.180.137:32888]   File "/usr/local/lib/python3.8/dist-packages/flask/app.py", line 1516, in full_dispatch_request
+[Fri Feb 11 20:16:00.434305 2022] [wsgi:error] [pid 242143] [client 192.31.180.137:32888]     rv = self.dispatch_request()
+[Fri Feb 11 20:16:00.434315 2022] [wsgi:error] [pid 242143] [client 192.31.180.137:32888]   File "/usr/local/lib/python3.8/dist-packages/flask/app.py", line 1502, in dispatch_request
+[Fri Feb 11 20:16:00.434327 2022] [wsgi:error] [pid 242143] [client 192.31.180.137:32888]     return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+[Fri Feb 11 20:16:00.434337 2022] [wsgi:error] [pid 242143] [client 192.31.180.137:32888]   File "/var/www/FlaskApp/FlaskApp/routes.py", line 29, in update
+[Fri Feb 11 20:16:00.434343 2022] [wsgi:error] [pid 242143] [client 192.31.180.137:32888]     string1 = test + "\\n"
+[Fri Feb 11 20:16:00.434378 2022] [wsgi:error] [pid 242143] [client 192.31.180.137:32888] TypeError: unsupported operand type(s) for +: 'NoneType' and 'str'
+[Fri Feb 11 20:40:53.817902 2022] [wsgi:error] [pid 242143] [client 65.154.226.220:50619] mod_wsgi (pid=242143): Exception occurred processing WSGI script '/var/www/FlaskApp/FlaskApp.wsgi'.
+[Fri Feb 11 20:40:53.820033 2022] [wsgi:error] [pid 242143] [client 65.154.226.220:50619] Traceback (most recent call last):
+[Fri Feb 11 20:40:53.820131 2022] [wsgi:error] [pid 242143] [client 65.154.226.220:50619]   File "/usr/local/lib/python3.8/dist-packages/flask/app.py", line 2091, in __call__
+[Fri Feb 11 20:40:53.820140 2022] [wsgi:error] [pid 242143] [client 65.154.226.220:50619]     return self.wsgi_app(environ, start_response)
+[Fri Feb 11 20:40:53.820151 2022] [wsgi:error] [pid 242143] [client 65.154.226.220:50619]   File "/usr/local/lib/python3.8/dist-packages/flask/app.py", line 2076, in wsgi_app
+[Fri Feb 11 20:40:53.820155 2022] [wsgi:error] [pid 242143] [client 65.154.226.220:50619]     response = self.handle_exception(e)
+[Fri Feb 11 20:40:53.820164 2022] [wsgi:error] [pid 242143] [client 65.154.226.220:50619]   File "/usr/local/lib/python3.8/dist-packages/flask/app.py", line 2073, in wsgi_app
+[Fri Feb 11 20:40:53.820169 2022] [wsgi:error] [pid 242143] [client 65.154.226.220:50619]     response = self.full_dispatch_request()
+[Fri Feb 11 20:40:53.820178 2022] [wsgi:error] [pid 242143] [client 65.154.226.220:50619]   File "/usr/local/lib/python3.8/dist-packages/flask/app.py", line 1518, in full_dispatch_request
+[Fri Feb 11 20:40:53.820183 2022] [wsgi:error] [pid 242143] [client 65.154.226.220:50619]     rv = self.handle_user_exception(e)
+[Fri Feb 11 20:40:53.820207 2022] [wsgi:error] [pid 242143] [client 65.154.226.220:50619]   File "/usr/local/lib/python3.8/dist-packages/flask/app.py", line 1516, in full_dispatch_request
+[Fri Feb 11 20:40:53.820212 2022] [wsgi:error] [pid 242143] [client 65.154.226.220:50619]     rv = self.dispatch_request()
+[Fri Feb 11 20:40:53.820220 2022] [wsgi:error] [pid 242143] [client 65.154.226.220:50619]   File "/usr/local/lib/python3.8/dist-packages/flask/app.py", line 1502, in dispatch_request
+[Fri Feb 11 20:40:53.820225 2022] [wsgi:error] [pid 242143] [client 65.154.226.220:50619]     return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+[Fri Feb 11 20:40:53.820234 2022] [wsgi:error] [pid 242143] [client 65.154.226.220:50619]   File "/var/www/FlaskApp/FlaskApp/routes.py", line 29, in update
+[Fri Feb 11 20:40:53.820239 2022] [wsgi:error] [pid 242143] [client 65.154.226.220:50619]     string1 = test + "\\n"
+[Fri Feb 11 20:40:53.820263 2022] [wsgi:error] [pid 242143] [client 65.154.226.220:50619] TypeError: unsupported operand type(s) for +: 'NoneType' and 'str'
+[Sat Feb 12 01:04:15.351849 2022] [core:error] [pid 262937] [client 45.146.165.37:33704] AH00126: Invalid URI in request POST /cgi-bin/.%2e/.%2e/.%2e/.%2e/bin/sh HTTP/1.1
+[Sat Feb 12 20:42:29.753005 2022] [wsgi:error] [pid 262936] [client 207.6.126.16:53825] mod_wsgi (pid=262936): Exception occurred processing WSGI script '/var/www/FlaskApp/FlaskApp.wsgi'.
+[Sat Feb 12 20:42:29.756549 2022] [wsgi:error] [pid 262936] [client 207.6.126.16:53825] Traceback (most recent call last):
+[Sat Feb 12 20:42:29.756642 2022] [wsgi:error] [pid 262936] [client 207.6.126.16:53825]   File "/usr/local/lib/python3.8/dist-packages/flask/app.py", line 2091, in __call__
+[Sat Feb 12 20:42:29.756653 2022] [wsgi:error] [pid 262936] [client 207.6.126.16:53825]     return self.wsgi_app(environ, start_response)
+[Sat Feb 12 20:42:29.756660 2022] [wsgi:error] [pid 262936] [client 207.6.126.16:53825]   File "/usr/local/lib/python3.8/dist-packages/flask/app.py", line 2076, in wsgi_app
+[Sat Feb 12 20:42:29.756664 2022] [wsgi:error] [pid 262936] [client 207.6.126.16:53825]     response = self.handle_exception(e)
+[Sat Feb 12 20:42:29.756670 2022] [wsgi:error] [pid 262936] [client 207.6.126.16:53825]   File "/usr/local/lib/python3.8/dist-packages/flask/app.py", line 2073, in wsgi_app
+[Sat Feb 12 20:42:29.756674 2022] [wsgi:error] [pid 262936] [client 207.6.126.16:53825]     response = self.full_dispatch_request()
+[Sat Feb 12 20:42:29.756683 2022] [wsgi:error] [pid 262936] [client 207.6.126.16:53825]   File "/usr/local/lib/python3.8/dist-packages/flask/app.py", line 1518, in full_dispatch_request
+[Sat Feb 12 20:42:29.756687 2022] [wsgi:error] [pid 262936] [client 207.6.126.16:53825]     rv = self.handle_user_exception(e)
+[Sat Feb 12 20:42:29.756694 2022] [wsgi:error] [pid 262936] [client 207.6.126.16:53825]   File "/usr/local/lib/python3.8/dist-packages/flask/app.py", line 1516, in full_dispatch_request
+[Sat Feb 12 20:42:29.756697 2022] [wsgi:error] [pid 262936] [client 207.6.126.16:53825]     rv = self.dispatch_request()
+[Sat Feb 12 20:42:29.756703 2022] [wsgi:error] [pid 262936] [client 207.6.126.16:53825]   File "/usr/local/lib/python3.8/dist-packages/flask/app.py", line 1502, in dispatch_request
+[Sat Feb 12 20:42:29.756707 2022] [wsgi:error] [pid 262936] [client 207.6.126.16:53825]     return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+[Sat Feb 12 20:42:29.756714 2022] [wsgi:error] [pid 262936] [client 207.6.126.16:53825]   File "/var/www/FlaskApp/FlaskApp/routes.py", line 29, in update
+[Sat Feb 12 20:42:29.756717 2022] [wsgi:error] [pid 262936] [client 207.6.126.16:53825]     string1 = test + "\\n"
+[Sat Feb 12 20:42:29.756738 2022] [wsgi:error] [pid 262936] [client 207.6.126.16:53825] TypeError: unsupported operand type(s) for +: 'NoneType' and 'str'
+[Sat Feb 12 20:58:43.857202 2022] [core:error] [pid 270351] [client 45.146.165.37:52746] AH00126: Invalid URI in request POST /cgi-bin/.%2e/.%2e/.%2e/.%2e/bin/sh HTTP/1.1
+[Sun Feb 13 17:28:15.427820 2022] [core:error] [pid 281678] [client 45.146.165.37:55940] AH00126: Invalid URI in request POST /cgi-bin/.%2e/.%2e/.%2e/.%2e/bin/sh HTTP/1.1
+[Mon Feb 14 03:31:44.836599 2022] [authz_core:error] [pid 299332] [client 172.104.140.107:40662] AH01630: client denied by server configuration: /var/www/FlaskApp/FlaskApp.wsgi
+[Mon Feb 14 13:50:00.666739 2022] [core:error] [pid 299343] [client 45.146.165.37:37368] AH00126: Invalid URI in request POST /cgi-bin/.%2e/.%2e/.%2e/.%2e/bin/sh HTTP/1.1
