@@ -3,23 +3,28 @@ from FlaskApp import app
 import os
 basedir = os.path.abspath(os.path.dirname(__file__))
 print("the directory is: "+ basedir)
-
 app.route("/hello")
+
+
 def hello_world():
     return "<p>Hello, World!</p>"
+
 
 @app.route("/index")
 @app.route("/")
 def index():
     return render_template('index.html')
 
+
 @app.route("/about")
 def about():
     return render_template("about.html")
 
+
 @app.route("/admin")
 def admin():
     return render_template("admin.html")
+
 
 @app.route("/update", methods=['GET'])
 def update():
